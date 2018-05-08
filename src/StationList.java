@@ -1,3 +1,6 @@
+import model.Station;
+import model.Type;
+
 import java.util.ArrayList;
 import java.util.List;
 public class StationList {
@@ -32,7 +35,7 @@ public class StationList {
         for (Station station : stations) {
             if (station.getType() == Type.AIRPORT) {
                 int trainStationCount = findStationsInARadius(station.getLongitude(), station.getLatitude(), r)[0];
-                if (trainStationCount >= n) {
+                if (trainStationCount    >= n) {
                     System.out.println(station.getName() + ": " + trainStationCount + " trainstations nearby.");
                 }
             }
@@ -44,6 +47,4 @@ public class StationList {
             System.out.println(station.toString());
         }
     }
-
-
 }

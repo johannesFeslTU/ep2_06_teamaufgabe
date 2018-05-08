@@ -1,3 +1,6 @@
+import model.Station;
+import model.Type;
+
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
@@ -26,6 +29,6 @@ public class Main {
             System.exit(1);
         }
 
-        stationList.findAirportsWithSpecificTrainstationsNearBy(100, 20);
+        stationList.findAirportsWithSpecificTrainstationsNearBy(15.0, 20);
     }
 }

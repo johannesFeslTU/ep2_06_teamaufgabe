@@ -1,3 +1,5 @@
+package model;
+
 public class Station {
 
     private String name;
@@ -46,7 +48,7 @@ public class Station {
 
     @Override
     public String toString() {
-        return "Station{" +
+        return "model.Station{" +
                 "name='" + name + '\'' +
                 ", longitude=" + longitude +
                 ", latitude=" + latitude +
