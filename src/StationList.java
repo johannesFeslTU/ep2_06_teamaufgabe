@@ -31,11 +31,11 @@ public class StationList {
         return count;
     }
 
-    public void findAirportsWithSpecificTrainstationsNearBy(double r, int n) {
+    public void findAirportsWithSpecificAmountOfTrainstationsNearBy(double r, int n) {
         for (Station station : stations) {
             if (station.getType() == Type.AIRPORT) {
                 int trainStationCount = findStationsInARadius(station.getLongitude(), station.getLatitude(), r)[0];
-                if (trainStationCount    >= n) {
+                if (trainStationCount >= n) {
                     System.out.println(station.getName() + ": " + trainStationCount + " trainstations nearby.");
                 }
             }
